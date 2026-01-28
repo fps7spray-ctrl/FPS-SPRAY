@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - FPS SPRAY</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Game<span>/></span>
+        </a>
+        <div class="menuToggle" onclick="toggleMenu()">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="shop.html" onclick="toggleMenu()">Shop</a></li>
+            <li><a href="index.html#merchandise" onclick="toggleMenu()">Merchandise</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Shop Section -->
+    <section class="shop" id="shop">
+        <div class="title">
+            <lord-icon
+                src="https://cdn.lordicon.com/hnblokts.json"
+                trigger="loop"
+                colors="primary:#00ffff,secondary:#ffffff"
+                style="width: 50px;height: 50px;">
+            </lord-icon>
+            <h2 class="title-text"><span>S</span>hop</h2>
+            <p>Professional editing products and services for creators and gamers</p>
+            <p class="order-instruction">📱 Click any product below to DM us on Instagram @fpsspray</p>
+        </div>
+
+        <div class="shop-container">
+            <!-- Product 1 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product1.jpg" alt="GIGGLE CC">
+                </div>
+                <div class="shop-info">
+                    <h3>GIGGLE CC</h3>
+                    <p>Professional giggle CC cinematic effects</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">Rs 120</span>
+                            <span class="discount-price">Rs 59</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('GIGGLE CC', '59')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product2.jpg" alt="Thumbnail Design">
+                </div>
+                <div class="shop-info">
+                    <h3>Thumbnail Design Pack</h3>
+                    <p>5 custom YouTube thumbnails with professional design</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">$59.99</span>
+                            <span class="discount-price">$29.99</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('Thumbnail Design Pack', '$29.99')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product3.jpg" alt="Short-Form Content">
+                </div>
+                <div class="shop-info">
+                    <h3>Short-Form Content Edit</h3>
+                    <p>Professional editing for Reels, TikToks, and Shorts</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">$39.99</span>
+                            <span class="discount-price">$19.99</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('Short-Form Content Edit', '$19.99')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product4.jpg" alt="Cinematic Edit">
+                </div>
+                <div class="shop-info">
+                    <h3>Cinematic Video Edit</h3>
+                    <p>High-quality cinematic editing with color grading</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">$159.99</span>
+                            <span class="discount-price">$79.99</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('Cinematic Video Edit', '$79.99')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product5.jpg" alt="Overlay & Effects">
+                </div>
+                <div class="shop-info">
+                    <h3>Overlay & Effects Pack</h3>
+                    <p>Complete package of custom overlays and effects</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">$49.99</span>
+                            <span class="discount-price">$24.99</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('Overlay & Effects Pack', '$24.99')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="shop-card" data-aos="zoom-in">
+                <div class="shop-image">
+                    <img src="media/merchandise/product6.jpg" alt="Premium Edit Contract">
+                </div>
+                <div class="shop-info">
+                    <h3>Premium Edit Contract</h3>
+                    <p>Monthly contract for unlimited high-quality edits</p>
+                    <div class="shop-footer">
+                        <div class="price-section">
+                            <span class="original-price">$399.99</span>
+                            <span class="discount-price">$199.99</span>
+                            <span class="discount-badge">50% OFF</span>
+                        </div>
+                        <button class="order-btn" onclick="openOrderModal('Premium Edit Contract', '$199.99')">Order on Instagram</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderModal()">&times;</span>
+            <h2>Order Confirmation</h2>
+            <p>Product: <strong id="modalProduct"></strong></p>
+            <p>Price: <strong id="modalPrice"></strong></p>
+            <div class="message-box">
+                <p>Copy this message and send it to our Instagram DM:</p>
+                <textarea id="messageText" readonly></textarea>
+                <button class="copy-btn" onclick="copyMessage()">📋 Copy Message</button>
+            </div>
+            <a href="https://instagram.com/fpsspray" target="_blank" class="dm-btn">💬 Go to Instagram DM</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FPS SPRAY. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/dist/boxicons.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        AOS.init();
+
+        function toggleMenu() {
+            const nav = document.querySelector('.navigation');
+            nav.classList.toggle('active');
+        }
+
+        function openOrderModal(productName, price) {
+            const modal = document.getElementById('orderModal');
+            const messageText = document.getElementById('messageText');
+            
+            document.getElementById('modalProduct').textContent = productName;
+            document.getElementById('modalPrice').textContent = price;
+            
+            const message = `Hi! I want to order: ${productName} (${price}). Please let me know the process. Thanks!`;
+            messageText.value = message;
+            
+            modal.style.display = 'block';
+        }
+
+        function closeOrderModal() {
+            const modal = document.getElementById('orderModal');
+            modal.style.display = 'none';
+        }
+
+        function copyMessage() {
+            const messageText = document.getElementById('messageText');
+            messageText.select();
+            document.execCommand('copy');
+            
+            const btn = event.target;
+            const originalText = btn.textContent;
+            btn.textContent = '✓ Copied!';
+            setTimeout(() => {
+                btn.textContent = originalText;
+            }, 2000);
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('orderModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
